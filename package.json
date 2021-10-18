@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/jasko255/node-rest-api#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-list-endpoints": "^6.0.0",
     "helmet": "^4.6.0",
     "mongoose": "^6.0.11",
     "morgan": "^1.10.0",
