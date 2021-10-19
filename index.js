@@ -5,6 +5,7 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 import userRouter from './routes/users.js'
 import authRouter from './routes/auth.js'
+import postRouter from './routes/posts.js'
 import listEndpoints from "express-list-endpoints";
 
 dotenv.config()
@@ -38,6 +39,7 @@ app.use(morgan('common'))
 
 app.use('/api/users', userRouter)
 app.use('/api/auth', authRouter)
+app.use('/api/posts', postRouter)
 
 
 // mongoose
